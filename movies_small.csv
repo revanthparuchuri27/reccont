@@ -1,0 +1,8 @@
+import pandas as pd
+
+movies = pd.read_csv("dataset/tmdb_5000_movies.csv")
+
+# take only 500 rows
+movies_small = movies.head(500)
+
+movies_small.to_csv("movies_small.csv", index=False)
